@@ -1,0 +1,441 @@
+{
+  "id": "80829339-2edb-4c30-b535-c0b5093cb1a8",
+  "revision": 0,
+  "last_node_id": 10,
+  "last_link_id": 10,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "InttoBooleans",
+      "pos": [
+        -96.5092183502876,
+        189.81788807449183
+      ],
+      "size": [
+        270,
+        198
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "bit0",
+          "type": "BOOLEAN",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "bit1",
+          "type": "BOOLEAN",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "bit2",
+          "type": "BOOLEAN",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "bit3",
+          "type": "BOOLEAN",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "bit4",
+          "type": "BOOLEAN",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "bit5",
+          "type": "BOOLEAN",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "bit6",
+          "type": "BOOLEAN",
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "bit7",
+          "type": "BOOLEAN",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "4952749572aa2025e663469e66132d004a7b08bd",
+        "Node name for S&R": "InttoBooleans"
+      },
+      "widgets_values": [
+        129
+      ]
+    },
+    {
+      "id": 2,
+      "type": "PreviewAny",
+      "pos": [
+        295.62226401987976,
+        151.43398337971334
+      ],
+      "size": [
+        212.43967933270142,
+        112
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 0 - 1",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 3,
+      "type": "PreviewAny",
+      "pos": [
+        523.6258685055188,
+        153.75968970237142
+      ],
+      "size": [
+        224.44518773271557,
+        112
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 1 - 2",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 7,
+      "type": "PreviewAny",
+      "pos": [
+        760.1711797717545,
+        157.7702352596816
+      ],
+      "size": [
+        220.290946057852,
+        112
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 10
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 2 - 4",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 6,
+      "type": "PreviewAny",
+      "pos": [
+        993.1435917324097,
+        159.18854259519827
+      ],
+      "size": [
+        224.44518773271557,
+        112
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 4
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 3 - 8",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 4,
+      "type": "PreviewAny",
+      "pos": [
+        525.4501870713196,
+        308.56432896324816
+      ],
+      "size": [
+        224.44518773271557,
+        112
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 5 - 32",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 8,
+      "type": "PreviewAny",
+      "pos": [
+        996.4032156831706,
+        317.7898887346351
+      ],
+      "size": [
+        224.44518773271557,
+        112
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 7 - 128",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 9,
+      "type": "PreviewAny",
+      "pos": [
+        760.4817325015288,
+        314.46316328849633
+      ],
+      "size": [
+        224.44518773271557,
+        112
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 7
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 6 - 64",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 5,
+      "type": "PreviewAny",
+      "pos": [
+        294.3967011288496,
+        307.8066092604104
+      ],
+      "size": [
+        210,
+        112
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 5
+        }
+      ],
+      "outputs": [],
+      "title": "Bit 4 - 16",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      2,
+      1,
+      1,
+      3,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      4,
+      1,
+      3,
+      6,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      5,
+      1,
+      4,
+      5,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      6,
+      1,
+      5,
+      4,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      7,
+      1,
+      6,
+      9,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      9,
+      1,
+      7,
+      8,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      10,
+      1,
+      2,
+      7,
+      0,
+      "BOOLEAN"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7400249944258174,
+      "offset": [
+        368.82708897699774,
+        159.30636481758435
+      ]
+    },
+    "frontendVersion": "1.37.11"
+  },
+  "version": 0.4
+}

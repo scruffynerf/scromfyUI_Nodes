@@ -1,0 +1,313 @@
+{
+  "id": "a9a56598-656e-434a-99bf-924264b478d1",
+  "revision": 0,
+  "last_node_id": 8,
+  "last_link_id": 5,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "AnyValuetoJSON",
+      "pos": [
+        432.59375,
+        130.08984375
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 1
+        },
+        {
+          "name": "json_in",
+          "shape": 7,
+          "type": "JSON",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "JSON",
+          "type": "JSON",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "AnyValuetoJSON"
+      },
+      "widgets_values": [
+        "Color"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "AnyValuetoJSON",
+      "pos": [
+        435.0546875,
+        278.05859375
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 2
+        },
+        {
+          "name": "json_in",
+          "shape": 7,
+          "type": "JSON",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "JSON",
+          "type": "JSON",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "AnyValuetoJSON"
+      },
+      "widgets_values": [
+        "Shape"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "MergeMultipletoJSON",
+      "pos": [
+        747.04296875,
+        167.07421875
+      ],
+      "size": [
+        179.257421875,
+        106
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_1",
+          "type": "JSON",
+          "link": 3
+        },
+        {
+          "name": "json_2",
+          "shape": 7,
+          "type": "JSON",
+          "link": 4
+        },
+        {
+          "name": "json_3",
+          "shape": 7,
+          "type": "JSON",
+          "link": null
+        },
+        {
+          "name": "json_4",
+          "shape": 7,
+          "type": "JSON",
+          "link": null
+        },
+        {
+          "name": "json_5",
+          "shape": 7,
+          "type": "JSON",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "JSON",
+          "type": "JSON",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MergeMultipletoJSON"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5,
+      "type": "PrimitiveString",
+      "pos": [
+        180.234375,
+        129.9765625
+      ],
+      "size": [
+        210,
+        70
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PrimitiveString"
+      },
+      "widgets_values": [
+        "red"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "PrimitiveString",
+      "pos": [
+        181.08984375,
+        278.90234375
+      ],
+      "size": [
+        210,
+        70
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PrimitiveString"
+      },
+      "widgets_values": [
+        "circle"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "PreviewAny",
+      "pos": [
+        967.91796875,
+        165.578125
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 5
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      5,
+      0,
+      1,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      6,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      1,
+      0,
+      3,
+      0,
+      "JSON"
+    ],
+    [
+      4,
+      7,
+      0,
+      3,
+      1,
+      "JSON"
+    ],
+    [
+      5,
+      3,
+      0,
+      8,
+      0,
+      "JSON"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        83.54296875,
+        115.5
+      ]
+    },
+    "frontendVersion": "1.37.11"
+  },
+  "version": 0.4
+}

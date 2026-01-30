@@ -1,0 +1,241 @@
+{
+  "id": "e3fd627c-e166-4d7e-9106-dd6d595e6d5d",
+  "revision": 0,
+  "last_node_id": 6,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        185.19140625,
+        72.40234375
+      ],
+      "size": [
+        282.798828125,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "example.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ImageToMask",
+      "pos": [
+        497.3914062499998,
+        82.2605468749999
+      ],
+      "size": [
+        210,
+        59.8359375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            4,
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "ImageToMask"
+      },
+      "widgets_values": [
+        "green"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "MaskPreview",
+      "pos": [
+        527.751953125,
+        190.51484374999993
+      ],
+      "size": [
+        140,
+        246.00000000000003
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 4
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "MaskPreview"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "MaskPreview",
+      "pos": [
+        1028.6953124999998,
+        86.78554687499997
+      ],
+      "size": [
+        253.640625,
+        268.609375
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "MaskPreview"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1,
+      "type": "SplitMaskByGrid",
+      "pos": [
+        743.5546875000006,
+        89.33710937499997
+      ],
+      "size": [
+        241.3072265625,
+        214.83203125
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batched_mask",
+          "type": "MASK",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "mask_list",
+          "shape": 6,
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "SplitMaskByGrid"
+      },
+      "widgets_values": [
+        1,
+        2,
+        false,
+        true,
+        0.9
+      ]
+    }
+  ],
+  "links": [
+    [
+      3,
+      2,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      4,
+      0,
+      5,
+      0,
+      "MASK"
+    ],
+    [
+      5,
+      4,
+      0,
+      1,
+      0,
+      "MASK"
+    ],
+    [
+      6,
+      1,
+      0,
+      6,
+      0,
+      "MASK"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": [
+        -85.19140625,
+        27.59765625
+      ]
+    },
+    "frontendVersion": "1.37.11"
+  },
+  "version": 0.4
+}

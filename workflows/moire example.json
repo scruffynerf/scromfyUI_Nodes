@@ -1,0 +1,722 @@
+{
+  "id": "e3fd627c-e166-4d7e-9106-dd6d595e6d5d",
+  "revision": 0,
+  "last_node_id": 22,
+  "last_link_id": 30,
+  "nodes": [
+    {
+      "id": 7,
+      "type": "MoireCoordinates",
+      "pos": [
+        493.54921875000014,
+        135.52031249999993
+      ],
+      "size": [
+        210,
+        90.62382812500005
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 8
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireCoordinates"
+      },
+      "widgets_values": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": 14,
+      "type": "PreviewImage",
+      "pos": [
+        1382.4824218749998,
+        96.28554687499992
+      ],
+      "size": [
+        191.390625,
+        246
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "PreviewImage",
+      "pos": [
+        1387.14453125,
+        329.75624999999997
+      ],
+      "size": [
+        191.390625,
+        246
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 17,
+      "type": "PreviewImage",
+      "pos": [
+        1389.2843749999988,
+        585.5750000000007
+      ],
+      "size": [
+        191.390625,
+        246
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "MoireRenderer",
+      "pos": [
+        1065.029296875,
+        342.19999999999993
+      ],
+      "size": [
+        280.35546875,
+        174
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            18
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireRenderer"
+      },
+      "widgets_values": [
+        "grid",
+        10,
+        0.1,
+        0.3,
+        false
+      ]
+    },
+    {
+      "id": 16,
+      "type": "MoireRenderer",
+      "pos": [
+        1062.3824218749999,
+        600.0382812499996
+      ],
+      "size": [
+        280.35546875,
+        174
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            17
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireRenderer"
+      },
+      "widgets_values": [
+        "checker",
+        30,
+        0.1,
+        0.3,
+        false
+      ]
+    },
+    {
+      "id": 8,
+      "type": "MoireRenderer",
+      "pos": [
+        1059.237109375001,
+        106.93320312499945
+      ],
+      "size": [
+        280.35546875,
+        174
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            14
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireRenderer"
+      },
+      "widgets_values": [
+        "dots",
+        5,
+        0.1,
+        0.3,
+        false
+      ]
+    },
+    {
+      "id": 19,
+      "type": "MoireWarpSwirl",
+      "pos": [
+        759.2765625000003,
+        348.78710937500006
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "links": [
+            23,
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireWarpSwirl"
+      },
+      "widgets_values": [
+        1,
+        0.8
+      ]
+    },
+    {
+      "id": 12,
+      "type": "MoireWarpSinusoidal",
+      "pos": [
+        752.1222656249995,
+        118.55195312499991
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "links": [
+            13,
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireWarpSinusoidal"
+      },
+      "widgets_values": [
+        3,
+        3,
+        0.15,
+        0.15
+      ]
+    },
+    {
+      "id": 13,
+      "type": "GetImageSize",
+      "pos": [
+        480.61562499999997,
+        342.41484374999993
+      ],
+      "size": [
+        140,
+        124.00000000000003
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "GetImageSize"
+      },
+      "widgets_values": [
+        "width: 768, height: 768\n batch size: 1"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        410.2488281250001,
+        520.209765624999
+      ],
+      "size": [
+        282.798828125,
+        314.00000000000006
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7,
+            29
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "example.png",
+        "image"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "MoireImageWarp",
+      "pos": [
+        770.8817508749994,
+        809.7876176210938
+      ],
+      "size": [
+        161.046484375,
+        66
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 28
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 29
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            30
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireImageWarp"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "MoireWarpTwist",
+      "pos": [
+        759.5042968750004,
+        583.8691406249998
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "coords",
+          "type": "MOIRE_COORDS",
+          "links": [
+            27,
+            28
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "scruffynerf/scromfyUI_Nodes",
+        "ver": "e3df6a9157acc787beee0691aae7e8a406f8807d",
+        "Node name for S&R": "MoireWarpTwist"
+      },
+      "widgets_values": [
+        0.5
+      ]
+    },
+    {
+      "id": 22,
+      "type": "PreviewImage",
+      "pos": [
+        1106.7497856523453,
+        843.3649991992182
+      ],
+      "size": [
+        191.390625,
+        246
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 30
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.10.0",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      7,
+      2,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      13,
+      0,
+      7,
+      0,
+      "INT"
+    ],
+    [
+      9,
+      13,
+      1,
+      7,
+      1,
+      "INT"
+    ],
+    [
+      10,
+      7,
+      0,
+      12,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      13,
+      12,
+      0,
+      8,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      14,
+      8,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      16,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      15,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      12,
+      0,
+      19,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      23,
+      19,
+      0,
+      15,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      26,
+      19,
+      0,
+      21,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      27,
+      21,
+      0,
+      16,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      28,
+      21,
+      0,
+      9,
+      0,
+      "MOIRE_COORDS"
+    ],
+    [
+      29,
+      2,
+      0,
+      9,
+      1,
+      "IMAGE"
+    ],
+    [
+      30,
+      9,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5644739300537773,
+      "offset": [
+        244.34454710546913,
+        166.1529231601566
+      ]
+    },
+    "frontendVersion": "1.37.11"
+  },
+  "version": 0.4
+}
