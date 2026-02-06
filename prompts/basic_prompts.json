@@ -1,0 +1,345 @@
+[
+  {
+    "tags": [
+      "portraits",
+      "female",
+      "portrait",
+      "soft_lighting",
+      "closeup",
+      "easy"
+    ],
+    "prompt": "portrait of a woman in her 30s, gentle smile, auburn hair, green eyes, soft natural lighting, shallow depth of field, neutral background"
+  },
+  {
+    "tags": [
+      "portraits",
+      "male",
+      "portrait",
+      "dramatic_lighting",
+      "closeup",
+      "easy"
+    ],
+    "prompt": "portrait of a man in his 40s, short beard, weathered face, strong jawline, dramatic side lighting, deep shadows, looking off-camera"
+  },
+  {
+    "tags": [
+      "portraits",
+      "female",
+      "full_body",
+      "dynamic_pose",
+      "outdoor",
+      "medium"
+    ],
+    "prompt": "full body shot of a young woman mid-stride, flowing dress, wind in her hair, outdoor setting, golden hour lighting"
+  },
+  {
+    "tags": [
+      "portraits",
+      "male",
+      "full_body",
+      "static_pose",
+      "urban",
+      "medium"
+    ],
+    "prompt": "full body shot of a muscular man standing confidently, arms crossed, casual clothing, urban alley background, overcast lighting"
+  },
+  {
+    "tags": [
+      "portraits",
+      "female",
+      "portrait",
+      "elderly",
+      "closeup",
+      "character",
+      "medium"
+    ],
+    "prompt": "close-up portrait of an elderly woman, silver hair in a bun, deep wrinkles, kind eyes, warm window lighting, dignified expression"
+  },
+  {
+    "tags": [
+      "portraits",
+      "group",
+      "multiple_subjects",
+      "candid",
+      "indoor",
+      "hard"
+    ],
+    "prompt": "three friends laughing together at a cafe table, mixed genders, candid moment, shallow depth of field, afternoon light through windows"
+  },
+  {
+    "tags": [
+      "fantasy",
+      "female",
+      "armor",
+      "magical",
+      "elf",
+      "medium"
+    ],
+    "prompt": "elven warrior woman in ornate silver armor, pointed ears, long white hair, enchanted forest background, magical glowing particles, ethereal lighting"
+  },
+  {
+    "tags": [
+      "fantasy",
+      "male",
+      "dwarf",
+      "blacksmith",
+      "craftsman",
+      "fire",
+      "medium"
+    ],
+    "prompt": "grizzled dwarven blacksmith at his forge, thick braided beard, leather apron, molten metal glow illuminating his face, smoke and sparks"
+  },
+  {
+    "tags": [
+      "fantasy",
+      "landscape",
+      "epic",
+      "magical",
+      "architecture",
+      "hard"
+    ],
+    "prompt": "ancient floating islands connected by rope bridges, waterfalls cascading into clouds below, distant castle spires, sunset colors, epic scale"
+  },
+  {
+    "tags": [
+      "scifi",
+      "female",
+      "cyberpunk",
+      "neon",
+      "cybernetics",
+      "medium"
+    ],
+    "prompt": "cyberpunk woman with glowing circuit tattoos, half-shaved neon pink hair, chrome cybernetic arm, rain-soaked neon city background, night scene"
+  },
+  {
+    "tags": [
+      "scifi",
+      "male",
+      "military",
+      "armor",
+      "industrial",
+      "medium"
+    ],
+    "prompt": "space marine in battle-worn power armor, helmet under arm, scarred face, massive starship hangar background, harsh industrial lighting"
+  },
+  {
+    "tags": [
+      "scifi",
+      "landscape",
+      "cityscape",
+      "futuristic",
+      "vehicles",
+      "neon",
+      "hard"
+    ],
+    "prompt": "sprawling megacity skyline at dusk, flying vehicles between towering skyscrapers, holographic advertisements, smog and neon, cinematic scale"
+  },
+  {
+    "tags": [
+      "western",
+      "male",
+      "cowboy",
+      "outdoor",
+      "period",
+      "medium"
+    ],
+    "prompt": "rugged cowboy leaning against a wooden post, worn leather hat, dusty duster coat, sun-bleached town in background, harsh midday sun, squinting eyes"
+  },
+  {
+    "tags": [
+      "western",
+      "landscape",
+      "desert",
+      "silhouette",
+      "sunset",
+      "medium"
+    ],
+    "prompt": "vast desert canyon at sunset, lone rider silhouette on horseback, red rock formations, dramatic clouds, golden and purple sky"
+  },
+  {
+    "tags": [
+      "noir",
+      "male",
+      "detective",
+      "indoor",
+      "moody",
+      "medium"
+    ],
+    "prompt": "private detective in a dimly lit office, fedora hat, cigarette smoke curling, venetian blind shadows across face, 1940s aesthetic, black and white tones"
+  },
+  {
+    "tags": [
+      "noir",
+      "female",
+      "glamour",
+      "indoor",
+      "moody",
+      "medium"
+    ],
+    "prompt": "femme fatale in a red dress at a smoky jazz bar, mysterious expression, dramatic uplighting, art deco interior, moody atmosphere"
+  },
+  {
+    "tags": [
+      "horror",
+      "landscape",
+      "interior",
+      "abandoned",
+      "atmospheric",
+      "creepy",
+      "medium"
+    ],
+    "prompt": "abandoned victorian asylum hallway, peeling wallpaper, single flickering light, fog creeping along floor, ominous doorway at end, desaturated colors"
+  },
+  {
+    "tags": [
+      "horror",
+      "female",
+      "supernatural",
+      "forest",
+      "creepy",
+      "medium"
+    ],
+    "prompt": "pale woman in tattered white dress, long black hair covering face, standing in moonlit forest clearing, unsettling atmosphere, blue-grey tones"
+  },
+  {
+    "tags": [
+      "romantic",
+      "female",
+      "intimate",
+      "indoor",
+      "sensual",
+      "medium"
+    ],
+    "prompt": "woman lounging on silk sheets, soft bedroom lighting, bare shoulders, relaxed sensual pose, warm golden tones, artistic composition"
+  },
+  {
+    "tags": [
+      "romantic",
+      "male",
+      "intimate",
+      "indoor",
+      "sensual",
+      "medium"
+    ],
+    "prompt": "shirtless man in morning light, tousled hair, looking toward window, soft shadows across torso, intimate bedroom setting, warm peaceful mood"
+  },
+  {
+    "tags": [
+      "romantic",
+      "couple",
+      "intimate",
+      "emotional",
+      "two_subjects",
+      "hard"
+    ],
+    "prompt": "couple in close embrace, foreheads touching, eyes closed, soft backlighting, intimate moment, shallow depth of field, warm color palette"
+  },
+  {
+    "tags": [
+      "environments",
+      "architecture",
+      "gothic",
+      "interior",
+      "religious",
+      "grand",
+      "hard"
+    ],
+    "prompt": "towering gothic cathedral interior, massive stained glass windows, light beams through dust particles, intricate stone carvings, awe-inspiring scale"
+  },
+  {
+    "tags": [
+      "environments",
+      "architecture",
+      "modern",
+      "luxury",
+      "outdoor",
+      "minimalist",
+      "medium"
+    ],
+    "prompt": "minimalist modern house with floor-to-ceiling windows, infinity pool, mountain backdrop, blue hour lighting, clean lines, luxury aesthetic"
+  },
+  {
+    "tags": [
+      "environments",
+      "nature",
+      "landscape",
+      "forest",
+      "atmospheric",
+      "peaceful",
+      "medium"
+    ],
+    "prompt": "ancient redwood forest, morning mist between massive tree trunks, shafts of light, ferns and moss, peaceful atmosphere, rich greens"
+  },
+  {
+    "tags": [
+      "environments",
+      "nature",
+      "landscape",
+      "ocean",
+      "dramatic",
+      "sunset",
+      "weather",
+      "medium"
+    ],
+    "prompt": "dramatic coastal cliffs at sunset, crashing waves, sea spray, lighthouse in distance, storm clouds breaking, orange and deep blue colors"
+  },
+  {
+    "tags": [
+      "environments",
+      "urban",
+      "night",
+      "rain",
+      "neon",
+      "street",
+      "hard"
+    ],
+    "prompt": "rain-slicked tokyo street at night, neon signs reflected in puddles, umbrella-carrying pedestrians, atmospheric depth, vibrant colors"
+  },
+  {
+    "tags": [
+      "technical",
+      "anatomy",
+      "hands",
+      "closeup",
+      "difficult",
+      "hard"
+    ],
+    "prompt": "pianist's hands on piano keys, detailed fingers, dramatic spotlight, concert hall darkness, focus on hand anatomy and positioning"
+  },
+  {
+    "tags": [
+      "technical",
+      "materials",
+      "fabric",
+      "texture",
+      "detail",
+      "fashion",
+      "hard"
+    ],
+    "prompt": "model in elaborate baroque ballgown, intricate lace details, silk and velvet textures, candlelit grand hall, rich fabric rendering"
+  },
+  {
+    "tags": [
+      "technical",
+      "materials",
+      "metal",
+      "reflections",
+      "armor",
+      "lighting",
+      "hard"
+    ],
+    "prompt": "knight in polished plate armor, environment reflections in metal surface, sword raised, stormy battlefield, lightning illumination"
+  },
+  {
+    "tags": [
+      "technical",
+      "composite",
+      "animal",
+      "human",
+      "fur",
+      "two_subjects",
+      "hard"
+    ],
+    "prompt": "woman with a wolf companion in snowy forest, both looking at camera, breath visible in cold air, winter lighting, detailed fur texture"
+  }
+]

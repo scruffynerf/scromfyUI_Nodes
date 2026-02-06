@@ -39,9 +39,9 @@ See the individual readme files for more details.
 - **[Logic & Utils](docs/logic_misc_readme.md)**: Integer-to-bit conversion and UUID generation.
 - **[Utility Nodes](docs/text_json_utils_readme.md)**: Flexible string list combining and JSON manipulation.
 - **[Moiré Nodes](docs/moire_nodes_readme.md)**: Tools for generating complex patterns and distortions.
+- **[Prompt Suite](docs/Prompt_Node.md)**: Structured prompt management and selection from JSON suites.
 
 ## Thanks and Kudos
 
 - [ComfyUI](https://github.com/comfy-org/ComfyUI)
 - [Banodoco](https://banodoco.ai) discord and all of the good folks there, especially Kijai.
-
