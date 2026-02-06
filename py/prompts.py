@@ -2,6 +2,7 @@ import json
 import os
 import glob
 import random
+from collections import Counter
 
 class PromptSuiteLoader:
     """
@@ -16,13 +17,13 @@ class PromptSuiteLoader:
         prompts_dir = os.path.join(base_path, "..", "prompts")
         
         file_list = ["all"]
-        tags_discovered = set()
+        tag_counts = Counter()
         
         if os.path.exists(prompts_dir):
             files = glob.glob(os.path.join(prompts_dir, "*.json")) + glob.glob(os.path.join(prompts_dir, "*.txt"))
             file_list.extend([os.path.basename(f) for f in sorted(files)])
             
-            # Fast scan of files to get tags for the dropdown
+            # Scan files to get tags and counts for the dropdown
             for f_path in files:
                 try:
                     if f_path.endswith(".json"):
@@ -30,17 +31,25 @@ class PromptSuiteLoader:
                             data = json.load(f)
                             prompts = data if isinstance(data, list) else data.get("prompts", [])
                             for p in prompts:
-                                for t in p.get("tags", []):
-                                    tags_discovered.add(t.lower())
+                                tags = [t.lower() for t in p.get("tags", [])]
+                                tag_counts.update(tags)
                     elif f_path.endswith(".txt"):
-                        # Filename tags
+                        # Filename tags apply to all lines in the file
+                        # We should ideally scan the file to count how many prompts actually exist
                         f_tags = os.path.basename(f_path).replace(".txt", "").replace("_", "-").split("-")
-                        for t in f_tags:
-                            tags_discovered.add(t.lower())
+                        try:
+                            with open(f_path, 'r', encoding='utf-8') as f_text:
+                                line_count = sum(1 for line in f_text if line.strip())
+                                for t in f_tags:
+                                    tag_counts[t.lower()] += line_count
+                        except:
+                            pass
                 except:
                     pass
 
-        tag_options = ["all", "manual"] + sorted(list(tags_discovered))
+        # Sort tags by count (descending), then by name
+        sorted_tags = sorted(tag_counts.items(), key=lambda x: (-x[1], x[0]))
+        tag_dropdown = ["all", "manual"] + [f"{tag} ({count})" for tag, count in sorted_tags]
 
         return {
             "required": {
@@ -48,7 +57,7 @@ class PromptSuiteLoader:
                     "default": "all",
                     "tooltip": "Specify a single file to load from, or 'all'"
                 }),
-                "tag_selection": (tag_options, {
+                "tag_selection": (tag_dropdown, {
                     "default": "all",
                     "tooltip": "Select a specific tag to filter by, or 'manual' to use the field below."
                 }),
@@ -67,6 +76,12 @@ class PromptSuiteLoader:
                     "step": 1,
                     "tooltip": "Select prompt index. Use -1 for RANDOM selection."
                 }),
+                "seed": ("INT", {
+                    "default": 0,
+                    "min": 0,
+                    "max": 0xffffffffffffffff,
+                    "tooltip": "Seed for random selection (used when index is -1)."
+                }),
             },
             "optional": {
                 "prefix": ("STRING", {"default": "", "multiline": False}),
@@ -79,7 +94,7 @@ class PromptSuiteLoader:
     FUNCTION = "load_prompts"
     CATEGORY = "Scromfy/prompts"
     
-    def load_prompts(self, file_filter, tag_selection, tags_manual, tag_logic, index, prefix="", suffix=""):
+    def load_prompts(self, file_filter, tag_selection, tags_manual, tag_logic, index, seed, prefix="", suffix=""):
         base_path = os.path.dirname(__file__)
         prompts_dir = os.path.join(base_path, "..", "prompts")
         
@@ -128,7 +143,8 @@ class PromptSuiteLoader:
         elif tag_selection == "all":
             search_tags = []
         else:
-            search_tags = [tag_selection.lower()]
+            # Parse "Tag Name (Count)" back to "tag name"
+            search_tags = [tag_selection.rsplit(" (", 1)[0].lower()]
 
         # 4. Apply filter logic
         filtered = []
@@ -155,7 +171,9 @@ class PromptSuiteLoader:
         
         # 6. Selection
         if index == -1:
-            selected_idx = random.randint(0, total_count - 1)
+            # Use the provided seed for deterministic randomness
+            prng = random.Random(seed)
+            selected_idx = prng.randint(0, total_count - 1)
         else:
             selected_idx = index % total_count
             
@@ -163,7 +181,7 @@ class PromptSuiteLoader:
         
         # 7. Summary Info
         info_lines = [f"Loaded {len(file_stats)} files:"]
-        for f, c in file_stats.items():
+        for f, c in sorted(file_stats.items()):
             info_lines.append(f" - {f}: {c} prompts")
         info_lines.append(f"\nFiltered Total: {total_count}")
         if search_tags:

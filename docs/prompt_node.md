@@ -4,15 +4,16 @@ The `PromptSuiteLoader` is a powerful, consolidated node for managing, filtering
 
 ## Core Features
 
-- **Dynamic Tag Discovery**: Automatically scans all `.json` and `.txt` files in the `prompts/` folder to build a dropdown of unique tags.
+- **Seeded Randomness**: Use the `seed` field to ensure that random selection (index `-1`) is deterministic and stable across executions.
+- **Dynamic Tag Discovery with Counts**: Automatically scans all `.json` and `.txt` files in the `prompts/` folder to build a sorted dropdown of unique tags, including the number of prompts matching each tag.
 - **Flexible Filtering**:
-    - Select a specific tag from a dropdown.
+    - Select a specific tag from a dropdown (sorted by popularity).
     - Or use a manual freeform field for multiple tags.
     - Choose between **AND** (all tags must match) or **OR** (at least one tag must match) logic.
 - **Intelligent Selection**:
     - Provide a specific index to select a prompt.
-    - Use index **-1** for a random selection on every execution.
-- **Consolidated Outputs**: A single node now provides the selected prompt, the filtered list, and loading statistics.
+    - Use index **-1** for a random selection based on the `seed`.
+- **Consolidated Outputs**: A single node provides the selected prompt, the filtered list, and loading statistics.
 
 ## Inputs
 
@@ -20,19 +21,20 @@ The `PromptSuiteLoader` is a powerful, consolidated node for managing, filtering
 *   **tag_selection**: 
     - `all`: No tag filtering.
     - `manual`: Use the `tags_manual` text field.
-    - `(tag name)`: Quickly filter by a specific discovered tag.
+    - `Tag Name (Count)`: Filter by a specific discovered tag. Options are sorted by usage count.
 *   **tags_manual**: A comma-separated list of tags (used only if `tag_selection` is `manual`).
 *   **tag_logic**: Switch between `AND` and `OR` for filtering when multiple tags are involved.
 *   **index**: The index of the prompt to select. **-1** triggers random selection.
+*   **seed**: The seed used for random selection when `index` is `-1`.
 *   **prefix / suffix**: Text to wrap around the selected prompt(s).
 
 ## Outputs
 
 *   **prompt**: The single selected prompt string.
-*   **prompt_list**: The full list of filtered prompts (as a Python list). Excellent for downstream list processing.
-*   **all_prompts_str**: The full list of filtered prompts as a single newline-separated string. (Replaces the need for the legacy Iterator input).
+*   **prompt_list**: The full list of filtered prompts (as a Python list).
+*   **all_prompts_str**: The full list of filtered prompts as a single newline-separated string.
 *   **count**: Total number of prompts that matched the current filters.
-*   **load_info**: Detailed text summary of which files were loaded and how many prompts each contributed. (Replaces the legacy Info node).
+*   **load_info**: Detailed text summary of which files were loaded and how many prompts each contributed.
 
 ## File Formats
 
