@@ -14,7 +14,7 @@ from typing import Optional, Tuple, List
 
 class MoireCoordinates:
     """Initializes the coordinate grid for moiré patterns."""
-    CATEGORY = "Scromfy/Image/Generate/Moire"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "init_coords"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -36,7 +36,7 @@ class MoireCoordinates:
 
 
 class MoireWarpSinusoidal:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -61,7 +61,7 @@ class MoireWarpSinusoidal:
 
 
 class MoireWarpBulge:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -89,7 +89,7 @@ class MoireWarpBulge:
 
 
 class MoireWarpSwirl:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -115,7 +115,7 @@ class MoireWarpSwirl:
 
 
 class MoireWarpNoise:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -142,7 +142,7 @@ class MoireWarpNoise:
 
 
 class MoireWarpWave:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -171,7 +171,7 @@ class MoireWarpWave:
 
 
 class MoireWarpBarrel:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -196,7 +196,7 @@ class MoireWarpBarrel:
 
 
 class MoireWarpRipple:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -221,7 +221,7 @@ class MoireWarpRipple:
 
 
 class MoireWarpShear:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -242,7 +242,7 @@ class MoireWarpShear:
 
 
 class MoireWarpFisheye:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -267,7 +267,7 @@ class MoireWarpFisheye:
 
 
 class MoireWarpTwist:
-    CATEGORY = "Scromfy/Image/Generate/Moire/Warp"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "warp"
     RETURN_TYPES = ("MOIRE_COORDS",)
     RETURN_NAMES = ("coords",)
@@ -293,7 +293,7 @@ class MoireWarpTwist:
 
 class MoireRenderer:
     """Renders a moiré pattern from coordinates."""
-    CATEGORY = "Scromfy/Image/Generate/Moire"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "render"
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("image", "mask")
@@ -325,7 +325,7 @@ class MoireRenderer:
 
 class MoireMultiGridRenderer:
     """Renders a multi-layer moiré pattern from coordinates."""
-    CATEGORY = "Scromfy/Image/Generate/Moire"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "render"
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("image", "mask")
@@ -382,7 +382,7 @@ class MoireMultiGridRenderer:
 
 class MoireImageWarp:
     """Applies coordinates to an existing image."""
-    CATEGORY = "Scromfy/Image/Transform/Moire"
+    CATEGORY = "Scromfy/Image/Moire"
     FUNCTION = "apply"
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("image", "mask")
@@ -428,7 +428,7 @@ def shuffle_with_seed(items: List[str], seed: int) -> List[str]:
 class MoirePatternGenerator:
     """ComfyUI node for generating moiré patterns with stackable warps."""
     
-    CATEGORY = "Scromfy/Image/Generate"
+    CATEGORY = "Scromfy/Image/Moire/Legacy"
     FUNCTION = "generate"
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("image", "mask")
@@ -783,7 +783,7 @@ class MoirePatternGenerator:
 class MoireWarpImage:
     """Simplified node that just warps an existing image/mask with moiré distortions."""
     
-    CATEGORY = "Scromfy/Image/Transform"
+    CATEGORY = "Scromfy/Image/Moire/Legacy"
     FUNCTION = "warp"
     RETURN_TYPES = ("IMAGE", "MASK")
     RETURN_NAMES = ("image", "mask")
