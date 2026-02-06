@@ -40,6 +40,7 @@ See the individual readme files for more details.
 - **[Utility Nodes](docs/text_json_utils_readme.md)**: Flexible string list combining and JSON manipulation.
 - **[Moiré Nodes](docs/moire_nodes_readme.md)**: Tools for generating complex patterns and distortions.
 - **[Prompt Suite](docs/prompt_node.md)**: Structured prompt management and selection from JSON suites.
+- **[Wildcard Processor](docs/wildcard_node.md)**: Recursive, seeded wildcard replacement using local text files.
 
 ## Thanks and Kudos
 

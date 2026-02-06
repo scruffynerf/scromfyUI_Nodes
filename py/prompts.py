@@ -31,7 +31,9 @@ class PromptSuiteLoader:
                             data = json.load(f)
                             prompts = data if isinstance(data, list) else data.get("prompts", [])
                             for p in prompts:
-                                tags = [t.lower() for t in p.get("tags", [])]
+                                # Use 'tags' if present, otherwise fallback to 'categories'
+                                raw_tags = p.get("tags") or p.get("categories") or []
+                                tags = [t.lower() for t in raw_tags]
                                 tag_counts.update(tags)
                     elif f_path.endswith(".txt"):
                         # Filename tags apply to all lines in the file
@@ -120,8 +122,15 @@ class PromptSuiteLoader:
                 try:
                     with open(file_path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
-                        prompts = data if isinstance(data, list) else data.get("prompts", [])
-                        all_loaded_prompts.extend(prompts)
+                    
+                    prompts = data if isinstance(data, list) else data.get("prompts", [])
+                    for p in prompts:
+                        # Optimization: only store prompt and tags
+                        raw_tags = p.get("tags") or p.get("categories") or []
+                        all_loaded_prompts.append({
+                            "tags": [t.lower() for t in raw_tags],
+                            "prompt": p.get("prompt", "")
+                        })
                 except Exception as e:
                     print(f"[Scromfy] Error loading {fname}: {e}")
             elif file_path.endswith(".txt"):

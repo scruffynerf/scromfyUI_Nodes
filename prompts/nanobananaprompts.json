@@ -1,0 +1,284 @@
+[
+  {
+    "tags": [
+      "composition",
+      "crowd"
+    ],
+    "prompt": "Create a hyper-realistic, ultra-sharp, full-color large-format image featuring a massive group of celebrities from different eras, all standing together in a single wide cinematic frame. The image must look like a perfectly photographed editorial cover with impeccable lighting, lifelike skin texture, micro-details of hair, pores, reflections, and fabric fibers.\n\nGENERAL STYLE & MOOD: Photorealistic, 8k, shallow depth of field, soft natural fill light + strong golden rim light. High dynamic range, calibrated color grading. Skin tones perfectly accurate. Crisp fabric detail with individual threads visible. Balanced composition, slightly wide-angle lens (35mm), center-weighted. All celebrities interacting naturally, smiling, posing, or conversing. Minimal background noise, but with enough world-building to feel real.\n\nTHE ENVIRONMENT: A luxurious open-air rooftop terrace at sunset overlooking a modern city skyline. Elements include: Warm golden light wrapping around silhouettes. Polished marble."
+  },
+  {
+    "tags": [
+      "camera",
+      "portrait",
+      "style"
+    ],
+    "prompt": "Without changing her original face, create a portrait of a beautiful young woman with porcelain-white skin, captured with a 1990s-style camera using a direct front flash. Her messy dark brown hair is tied up, posing with a calm yet playful smile. She wears a modern oversized cream sweater. The background is a dark white wall covered with aesthetic magazine posters and stickers, evoking a cozy bedroom or personal room atmosphere under dim lighting. The 35mm lens flash creates a nostalgic glow."
+  },
+  {
+    "tags": [
+      "professional"
+    ],
+    "prompt": "\"A professional, high-resolution profile photo, maintaining the exact facial structure, identity, and key features of the person in the input image. The subject is framed from the chest up, with ample headroom. The person looks directly at the camera. They are styled for a professional photo studio shoot, wearing a premium smart casual blazer in a subtle charcoal gray. The background is a solid '#562226' neutral studio color. Shot from a high angle with bright and airy soft, diffused studio lighting, gently illuminating the face and creating a subtle catchlight in the eyes, conveying a sense of clarity. Captured on an 85mm f/1.8 lens with a shallow depth of field, exquisite focus on the eyes, and beautiful, soft bokeh. Observe crisp detail on the fabric texture of the blazer, individual strands of hair, and natural, realistic skin texture. The atmosphere exudes confidence, professionalism, and approachability. Clean and bright cinematic color grading with subtle warmth and balanced tones, ensuring a polished and contemporary feel.\""
+  },
+  {
+    "tags": [
+      "anime",
+      "hyperrealistic",
+      "portrait",
+      "spotlight"
+    ],
+    "prompt": "Generate a hyperrealistic realistic-anime portrait of a female character standing in a completely black background.\nLighting: use a **narrow beam spotlight** focused only on the center of the face. \nThe edges of the light must be sharp and dramatic. \nAll areas outside the spotlight should fall quickly into deep darkness \n(high falloff shadow), almost blending into the black background. \nNot soft lighting.\nHair: long dark hair with some strands falling over the face. The lower parts of the hair should fade into the shadows.\nPose: one hand raised gently to the lips in a shy, hesitant gesture. \nEyes looking directly at the camera with a mysterious mood.\nClothing: black long-sleeve knit sweater; \nthe sweater and body should mostly disappear into the darkness with minimal detail.\nOverall tone: dark, moody, dramatic, mysterious. \nHigh-contrast only in the lit portion of the face. \nEverything outside the spotlight should be nearly invisible."
+  },
+  {
+    "tags": [
+      "json",
+      "mirror",
+      "selfie"
+    ],
+    "prompt": "{\n  \"subject\": {\n    \"description\": \"Young woman taking bathroom mirror selfie, innocent doe eyes but the outfit tells another story\",\n    \"mirror_rules\": \"facing mirror, hips slightly angled, close to mirror filling frame\",\n    \"age\": \"early 20s\",\n    \n    \"expression\": {\n      \"eyes\": \"big innocent doe eyes looking up through lashes, 'who me?' energy\",\n      \"mouth\": \"soft pout, lips slightly parted, maybe tiny tongue touching corner\",\n      \"brows\": \"soft, slightly raised, faux innocent\",\n      \"overall\": \"angel face but devil body, the contrast is the whole point\"\n    },\n    \n    \"hair\": {\n      \"color\": \"platinum blonde\",\n      \"style\": \"messy bun or claw clip, loose strands framing face, effortless\"\n    },\n    \n    \"body\": {\n      \"waist\": \"tiny\",\n      \"ass\": \"round, full, fabric of shorts riding up and clinging between cheeks, every curve visible through thin athletic material\",\n      \"thighs\": \"thick, soft, shorts barely containing\"\n    },\n    \n    \"clothing\": {\n      \"top\": {\n        \"type\": \"ULTRA mini crop tee\",\n        \"color\": \"yellow\",\n        \"graphic\": \"single BANANA logo/graphic\",\n        \"fit\": \"barely containing chest, fabric stretched tight, ends just below, shows full stomach\"\n      },\n      \"bottom\": {\n        \"type\": \"tight tennis skort or athletic booty shorts\",\n        \"color\": \"white\",\n        \"material\": \"thin stretchy athletic fabric\",\n        \"fit\": \"vacuum tight, riding up, clinging between cheeks, fabric creases visible, leaving nothing to imagination\"\n      }\n    },\n    \n    \"face\": {\n      \"features\": \"pretty - big eyes, small nose, full lips\",\n      \"makeup\": \"minimal, natural, lip gloss, no-makeup makeup\"\n    }\n  },\n\n  \"accessories\": {\n    \"headwear\": {\n      \"type\": \"Goorin Bros cap\",\n      \"details\": \"black with animal patch, worn backwards or tilted\"\n    },\n    \"headphones\": {\n      \"type\": \"over-ear white headphones\",\n      \"position\": \"around neck\"\n    },\n    \"device\": {\n      \"type\": \"iPhone\",\n      \"details\": \"visible in mirror, held at chest level\"\n    }\n  },\n\n  \"photography\": {\n    \"camera_style\": \"casual iPhone mirror selfie, NOT professional\",\n    \"quality\": \"iPhone camera - good but not studio, realistic social media quality\",\n    \"angle\": \"eye-level, straight on mirror\",\n    \"shot_type\": \"3/4 body, close to mirror\",\n    \"aspect_ratio\": \"9:16 vertical\",\n    \"texture\": \"natural, slightly grainy iPhone look, not over-processed\"\n  },\n\n  \"background\": {\n    \"setting\": \"regular apartment bathroom\",\n    \"style\": \"normal NYC apartment bathroom, not luxury\",\n    \"elements\": [\n      \"white subway tile walls\",\n      \"basic bathroom mirror with good lighting above\",\n      \"simple white sink vanity\",\n      \"toiletries visible - skincare bottles, toothbrush holder\",\n      \"towel hanging on hook\",\n      \"maybe shower curtain edge visible\",\n      \"small plant on counter\"\n    ],\n    \"atmosphere\": \"real bathroom, lived-in, normal home\",\n    \"lighting\": \"good vanity lighting above mirror - bright, even, flattering but not studio\"\n  },\n\n  \"vibe\": {\n    \"energy\": \"innocent face + sinful body = the whole game\",\n    \"mood\": \"just got ready for tennis but making content first, 'what?' expression while wearing basically nothing\",\n    \"contrast\": \"doe eyes + ass eating the shorts = lethal\",\n    \"caption_energy\": \"'tennis anyone? \ud83c\udf4c' or 'running late oops'\"\n  }\n}"
+  },
+  {
+    "tags": [
+      "anime",
+      "art",
+      "json"
+    ],
+    "prompt": "{\n  \"intent\": \"Photorealistic documentation of a specific chalkboard art piece featuring a single anime character, capturing the ephemeral nature of the medium within a classroom context.\",\n  \"frame\": {\n    \"aspect_ratio\": \"4:3\",\n    \"composition\": \"A centered medium shot focusing on the chalkboard mural. The composition includes the teacher's desk in the immediate foreground to provide scale, with the artwork of the single character dominating the background space.\",\n    \"style_mode\": \"documentary_realism, texture-focused, ambient naturalism\"\n  },\n  \"subject\": {\n    \"primary_subject\": \"A large-scale, intricate chalk drawing of Boa Hancock from 'One Piece' on a standard green classroom blackboard.\",\n    \"visual_details\": \"The illustration depicts Boa Hancock in a commanding pose, positioned centrally on the board. She is drawn with her signature long, straight black hair with a hime cut, rendered using dense application of black chalk with white accents for sheen. Her expression is haughty and imperious, with detailed dark blue eyes. She is depicted forming a heart shape with her hands, referencing her 'Mero Mero Mellow' technique. She wears a revealing red blouse with purple geometric patterns and gold snake-shaped earrings, drawn with vibrant colored chalks.\",\n    \"medium_texture\": \"The image preserves the dusty, matte quality of the chalk. Visible hatching and cross-hatching strokes create shading on her clothing and hair. Smudged areas on the green slate indicate where colors have been blended by hand.\",\n    \"surrounding_elements\": \"To the right of the character, vertical Japanese text reading '\u6d77\u8cca\u5973\u5e1d' (Pirate Empress) is written in crisp white chalk.\"\n  },\n  \"environment\": {\n    \"location\": \"A standard Japanese school classroom.\",\n    \"foreground_elements\": \"A wooden teacher's desk occupies the lower foreground. Scattered across the surface are a yellow box of colored chalks, loose sticks of red, white, and blue pastel chalk, and a dust-covered black felt eraser.\",\n    \"background_elements\": \"The green chalkboard spans the width of the frame, bordered by a metallic chalk tray containing accumulated chalk dust. The wall above is a plain, off-white plaster, featuring a small mounted speaker box.\",\n    \"atmosphere\": \"Quiet and academic, with a sense of stillness suggesting the room is currently unoccupied.\"\n  },\n  \"lighting\": {\n    \"type\": \"Diffuse ambient classroom lighting.\",\n    \"quality\": \"Soft, nondirectional illumination provided by overhead fluorescent fixtures mixed with daylight from windows on the left. The light is even, preventing glare on the chalkboard surface while highlighting the texture of the chalk.\",\n    \"color_temperature\": \"Neutral white, approximately 5000K, ensuring accurate color rendition of the red and purple chalks against the dark green board.\",\n    \"direction\": \"Overhead and slightly frontal.\"\n  },\n  \"camera\": {\n    \"sensor_format\": \"35mm full-frame digital sensor.\",\n    \"lens\": \"35mm prime lens.\",\n    \"aperture\": \"f/5.6\",\n    \"depth_of_field\": \"Moderate depth of field, keeping the chalkboard drawing in sharp focus while allowing the foreground desk elements to soften slightly.\",\n    \"shutter_speed\": \"1/60s\",\n    \"iso\": \"400\",\n    \"camera_position\": \"Eye-level standing position, set back enough to frame the entire drawing and the desk.\"\n  },\n  \"negative\": {\n    \"content\": \"Multiple characters, Midoriya, Shigaraki, male characters, digital art overlay, vector graphics, paper texture, oil painting, messy composition, extreme low angle, fisheye lens.\",\n    \"style\": \"No hyper-saturation, no soft focus filters, no heavy vignetting.\"\n  }\n}"
+  },
+  {
+    "tags": [
+      "cover",
+      "magazine",
+      "portrait"
+    ],
+    "prompt": "A photo of a glossy magazine cover, the cover has the large bold words \"Nano Banana Pro\". The text is in a serif font, black on white, and fills the view. No other text.\n\nIn front of the text there is a dynamic portrait of a person in green and banana yellow colored high-end fashion.\n\nPut the issue number and today's date in the corner along with a barcode and a price. The magazine is on a white shelf against a wall."
+  },
+  {
+    "tags": [],
+    "prompt": "A where is waldo image showing all Star Wars characters on Tatooine\n\nFirst one to pull this off. First take. Even Waldo is there."
+  },
+  {
+    "tags": [],
+    "prompt": "\"Generate the holiday photo of this person through the ages up to 80 years old\""
+  },
+  {
+    "tags": [],
+    "prompt": "recursive image of an orange cat sitting in an office chair holding up an iPad. On the iPad is the same cat in the same scene holding up the same iPad. Repeated on each iPad."
+  },
+  {
+    "tags": [
+      "visualization"
+    ],
+    "prompt": "35.6586\u00b0 N, 139.7454\u00b0 E at 19:00"
+  },
+  {
+    "tags": [
+      "visualization"
+    ],
+    "prompt": "How engineers see the San Francisco Bridge"
+  },
+  {
+    "tags": [],
+    "prompt": "an office team photo, everyone making a silly face"
+  },
+  {
+    "tags": [
+      "art"
+    ],
+    "prompt": "Create a photo of vagabonds musashi praying drawn on a glass whiteboard in a slightly faded green marker"
+  },
+  {
+    "tags": [
+      "",
+      "3d",
+      "view"
+    ],
+    "prompt": "Create a high-quality, realistic 3D render of exactly one instance of the object: [Orange iPhone 17 Pro].\nThe object must float freely in mid-air and be gently tilted and rotated in 3D space (not front-facing).\nUse a soft, minimalist dark background in a clean 1080\u00d71080 composition.\nLeft Half \u2014 Full Realism\nThe left half of the object should appear exactly as it looks in real life\n\u2014 accurate materials, colors, textures, reflections, and proportions.\nThis half must be completely opaque with no transparency and no wireframe overlay.\nNo soft transition, no fading, no blending.\nRight Half \u2014 Hard Cut Wireframe Interior\nThe right half must switch cleanly to a wireframe interior diagram.\nThe boundary between the two halves must be a perfectly vertical, perfectly sharp, crisp cut line, stretching straight from the top edge to the bottom edge of the object.\nNo diagonal edges, no curved slicing, no gradient.\nThe wireframe must use only two line colors:\nPrimary: white (\u224880% of all lines)\nSecondary: a color sampled from the dominant color of the realistic half (<20% of lines)\nThe wireframe lines must be thin, precise, aligned, and engineering-style.\nEvery wireframe component must perfectly match the geometry of the object.\nStrict Single-Object Rule\nRender only ONE object in the entire frame.  Render only one physical object.\nDo NOT show a second object from any angle. Do NOT show a second object as a reflection, shadow, silhouette, outline, ghost image, or transparency. Do NOT show a second object for comparison or display purposes. Do NOT show both the front and the back separately.\nDo NOT show an extra device behind, beside, underneath, or partially hidden.\nOnly one single object is allowed in the entire frame.\nNo duplicate objects, no mirrored back-and-front pairings, no reflections showing a second object.\nThe object must appear alone, floating.\nPose & Lighting:\nApply a natural, subtle tilt + rotation in 3D to make it look like a floating product visualization.\nUse soft, neutral global illumination and no shadows under the object.\nNo extra props, no text, no labels unless explicitly requested."
+  },
+  {
+    "tags": [
+      "3d",
+      "diorama"
+    ],
+    "prompt": "Create a high-detail 3D isometric diorama of the entire United States, where each state is represented as its own miniature platform. Inside each state, place a stylized, small-scale 3D model of that state's most iconic landmark. Use the same visual style as a cute, polished 3D city diorama: soft pastel colors, clean materials, smooth rounded forms, gentle shadows, and subtle reflections. Each landmark should look like a miniature model, charming, simplified, but clearly recognizable. Arrange the states in accurate geographical layout, with consistent lighting and perspective. Include state labels and landmark labels in a clean, modern font, floating above or near each model."
+  },
+  {
+    "tags": [],
+    "prompt": "create a map of the US where every state is made out of its most famous food (the states should actually look like they are made of the food, not a picture of the food). Check carefully to make sure each state is right."
+  },
+  {
+    "tags": [
+      "3d",
+      "isometric"
+    ],
+    "prompt": "Based on you know about me, generate a 3D isometric colored illustration of me working from home, filled with various interior details. The visual style should be rounded, polished, and playful. --ar 1:1\n\n[Additional details: a bichon frise and 3 monitors]"
+  },
+  {
+    "tags": [
+      ""
+    ],
+    "prompt": "combine these emojis: \ud83c\udf4c + \ud83d\ude0e, on a white background as a google emoji design"
+  },
+  {
+    "tags": [
+      "cover",
+      "magazine",
+      "photo",
+      "style"
+    ],
+    "prompt": "Create a beautiful, photo book style magazine cover that fully utilizes the 9:16 aspect ratio. Place the attached person at the precise coordinates of [latitude/longitude coordinate], seamlessly blending them into the scene as if they are sightseeing. Approach this task with the understanding that this is a critical page that will significantly influence visitor numbers. NEGATIVE: coordinate texts"
+  },
+  {
+    "tags": [
+      "3d",
+      "poster"
+    ],
+    "prompt": "Design a high-quality 3D poster for the movie/novel \"Name to be added\", first retrieving information about the movie/novel and famous scenes.\n\nFirst, please use your knowledge base to retrieve information about this movie/novel and find a representative famous scene or core location. In the center of the image, construct this scene as a delicate axonometric 3D miniature model. The style should adopt DreamWorks Animation's delicate and soft rendering style. You need to reproduce the architectural details, character dynamics, and environmental atmosphere of that time, whether it's a storm or a quiet afternoon, naturally integrating into the model's lighting.\n\nRegarding the background, do not use a simple pure white background. Please create a void environment with faint ink wash diffusion and flowing light mist around the model, with elegant colors, making the image look breathable and have depth, highlighting the preciousness of the central model.\n\nFinally, for the bottom layout, please generate Chinese text. Center the novel title with a font that matches the original style. Below the title, automatically retrieve and typeset a classic description or quote about this scene from the original work, using an elegant serif font. The overall layout should be as\u7cbe\u81f4balanced as a high-end museum exhibit label."
+  },
+  {
+    "tags": [
+      "diorama",
+      "miniature"
+    ],
+    "prompt": "Surreal miniature-world collage poster featuring an oversized open blue Nivea-style tin repurposed as a whimsical swimming pool filled with glossy white \"cream-water.\" \nTiny sunbathers float in pastel swim rings, lounge on miniature deck chairs, and slide into the cream pool from a small blue slide.\nThe background is a soft, warm, lightly textured countertop surface subtle marble or matte stone, evenly lit, no heavy veins or visual noise. \nKeep the scene grounded with soft shadows beneath props and figures.\nSurrounding the tin, keep the playful diorama elements: a small wooden deck with micro figures, pastel umbrellas, lounge chairs, and compact handcrafted accessories. Maintain the hovering pastel inflatables and plush cloud-like shapes, but ensure they feel like stylised decorative objects staged above the countertop \nPreserve the soft, high-saturation, toy-like aesthetic with plush textures, pastel gradients, and gentle lighting."
+  },
+  {
+    "tags": [
+      "json"
+    ],
+    "prompt": "{\n  \"prompt\": \"An award-winning, hyper-realist macro photograph in the style of high-concept editorial art. The image features an extreme close-up of an elderly woman's eye and cheekbone. A miniature, toy-like white and blue clothes iron is positioned on her skin, actively pressing down and ironing out deep wrinkles and crow's feet, leaving a streak of unnaturally smooth skin in its wake. A thin white cord trails organically across the texture of her face. The image demands microscopic clarity, capturing mascara clumps, skin pores, and vellus hairs. The lighting is an unforgiving, high-contrast hard flash typical of avant-garde fashion photography.\",\n  \"subject_details\": {\n    \"main_subject\": \"Elderly woman's face (Macro topography of aging skin)\",\n    \"object\": \"Miniature white and blue iron with realistic plastic textures and a trailing cord\",\n    \"action\": \"The iron is creating a visible, flattened path through the wrinkles, visually simulating a cosmetic procedure\",\n    \"features\": [\n      \"Piercing brown eye\",\n      \"Clumped mascara on aging lashes\",\n      \"Deeply etched crow's feet contrast with 'ironed' smooth areas\",\n      \"Micro-details: vellus hair, capillaries, makeup powder texture\"\n    ]\n  },\n  \"artistic_style\": {\n    \"genre\": [\"Contemporary Pop-Surrealism\", \"Satirical Editorial\", \"Visual Metaphor\"],\n    \"aesthetic\": [\"Maurizio Cattelan style\", \"Vivid Color\", \"Commercial Kitsch\", \"Tactile Realism\"],\n    \"lighting\": \"Studio Ring Flash, High-Key, Hard Shadows, Glossy finish\",\n    \"composition\": \"Macro Photography, Rule of Thirds focus on the iron\"\n  },\n  \"technical_specs\": {\n    \"camera\": \"Hasselblad H6D-100c\",\n    \"lens\": \"Macro 120mm f/4\",\n    \"film_stock\": \"Kodak Ektar 100\",\n    \"resolution\": \"8k, Unsplash award winner\"\n  },\n  \"mood\": \"Provocative, satirical, disturbingly pristine, humorous yet critical\"\n}"
+  },
+  {
+    "tags": [
+      "isometric",
+      "photography"
+    ],
+    "prompt": "Make a photo that is perfectly isometric. It is not a miniature, it is a captured photo that just happened to be perfectly isometric. It is a photo of [subject]."
+  },
+  {
+    "tags": [
+      "3d",
+      "display",
+      "urban"
+    ],
+    "prompt": "An enormous L-shaped glasses-free 3D LED screen situated prominently at a bustling urban intersection, designed in an iconic architectural style reminiscent of Shinjuku in Tokyo or Taikoo Li in Chengdu. The screen displays a captivating glasses-free 3D animation featuring [scene description]. The characters and objects possess striking depth and appear to break through the screen's boundaries, extending outward or floating vividly in mid-air. Under realistic daylight conditions, these elements cast lifelike shadows onto the screen's surface and surrounding buildings. Rich in intricate detail and vibrant colors, the animation seamlessly integrates with the urban setting and the bright sky overhead.\n\n----\nscene description: \n[An adorable giant kitten playfully paws at passing pedestrians, its fluffy paws and curious face extending realistically into the space around the screen.]"
+  },
+  {
+    "tags": [
+      "fisheye",
+      "girl",
+      "json"
+    ],
+    "prompt": "{\n  \"scene\": {\n    \"environment\": \"sunny_boardwalk\",\n    \"details\": \"wooden_planks, colorful_stalls, people_walking, distant_umbrellas\",\n    \"lighting\": \"bright_midday_sun\",\n    \"sky\": \"clear_blue\"\n  },\n  \"camera\": {\n    \"lens\": \"ultra_wide_fisheye_12mm\",\n    \"distance\": \"very_close_up\",\n    \"distortion\": \"strong_exaggeration\",\n    \"angle\": \"slightly_low_upward\"\n  },\n  \"subject\": {\n    \"type\": \"young_person\",\n    \"gender\": \"neutral\",\n    \"expression\": \"curious_playful\",\n    \"eyes\": \"large_due_to_lens_distortion\",\n    \"pose\": \"leaning_forward_sipping_drink\",\n    \"clothing\": {\n      \"top\": \"bright_green_knit_sweater\",\n      \"accessory\": \"chunky_blue_sunglasses\"\n    }\n  },\n  \"drink\": {\n    \"type\": \"iced_matcha_latte\",\n    \"ice_cubes\": \"large_clear\",\n    \"cup\": \"transparent_plastic\",\n    \"straw\": \"green_white_spiral\"\n  },\n  \"effects\": {\n    \"depth_of_field\": \"shallow_foreground_sharp_background_soft\",\n    \"reflections\": \"glasses_show_boardwalk_and_people\",\n    \"color_grade\": \"clean_natural\"\n  },\n  \"composition\": {\n    \"focus\": \"face_extreme_closeup\",\n    \"mood\": \"funny_intimate_casual\",\n    \"background_elements\": [\n      \"distant_people\",\n      \"benches\",\n      \"bright_shops\"\n    ]\n  }\n}"
+  },
+  {
+    "tags": [
+      "anime",
+      "hyperrealistic",
+      "portrait",
+      "spotlight"
+    ],
+    "prompt": "Generate a hyperrealistic realistic-anime portrait of a female character standing in a completely black background.\nLighting: use a **narrow beam spotlight** focused only on the center of the face. \nThe edges of the light must be sharp and dramatic. \nAll areas outside the spotlight should fall quickly into deep darkness \n(high falloff shadow), almost blending into the black background. \nNot soft lighting.\nHair: long dark hair with some strands falling over the face. The lower parts of the hair should fade into the shadows.\nPose: one hand raised gently to the lips in a shy, hesitant gesture. \nEyes looking directly at the camera with a mysterious mood.\nClothing: black long-sleeve knit sweater; \nthe sweater and body should mostly disappear into the darkness with minimal detail.\nOverall tone: dark, moody, dramatic, mysterious. \nHigh-contrast only in the lit portion of the face. \nEverything outside the spotlight should be nearly invisible."
+  },
+  {
+    "tags": [
+      "visualization"
+    ],
+    "prompt": "Create an educational infographic explaining [Photosynthesis] . Visual Elements : Illustrate the key components: The Sun, a green Plant, Water (H2O) entering roots, Carbon Dioxide (CO2) entering leaves, and Oxygen (O2) being released. Style : Clean, flat vector illustration suitable for a high school science textbook. Use arrows to show the flow of energy and matter. Labels : Label each element clearly in English ."
+  },
+  {
+    "tags": [
+      "visualization"
+    ],
+    "prompt": "[Subject]: A professional financial Sankey diagram visualizing the Income Statement of a major corporation, in the style of \"App Economy Insights\" and US corporate financial reports.[Visual Style]: High-fidelity vector infographic, clean minimalist aesthetic, flat design. The background is a clean, very light grey or off-white.[Color Strategy - CRITICAL]:\nAnalyze the [Insert Brand Name Here] logo. Extract its primary brand color (e.g., if Nvidia use neon green, if Meta use blue, if Tesla use red).\nUse this primary color as the dominant theme for the main revenue flows and profit blocks.\nCreate a harmonious color palette based on this primary color: use saturated shades for the vertical nodes (bars) and semi-transparent, lighter opacity gradients for the flowing paths to ensure a cohesive and professional look. Avoid clashing colors.[Composition & Structure]:\nFlow: A horizontal flow from Left (Revenue Sources) to Right (Net Profit).\nTexture: The connecting paths (flows) must appear \"silky smooth\" with elegant Bezier curves, looking like liquid ribbons, not jagged lines.\nIconography: On the left side (Revenue sources), include specific, minimalist flat vector icons representing the business segments (e.g., a car icon for automotive, a cloud icon for services, a chip icon for hardware).\nBranding: Place the official [Insert Brand Name Here] logo clearly at the top center or near the central revenue bar.[Details]: High resolution, 4k, sharp typography (sans-serif), professional data visualization layout. The chart clearly distinguishes between Revenue, Gross Profit, Operating Expenses, and Net Profit."
+  },
+  {
+    "tags": [],
+    "prompt": "Using Image 1 (the garment) and Image 2 (the model), create a hyper-realistic full-body fashion photo where the model is wearing the garment. Crucial Fit Details : The [T-shirt/Jacket] must drape naturally on the model's body, conforming to their posture and creating realistic folds and wrinkles . High-Fidelity Preservation : Preserve the original fabric texture, color, and any logos from Image 1 with extreme accuracy. Seamless Integration : Blend the garment into Image 2 by perfectly matching the ambient lighting, color temperature, and shadow direction . Photography Style : Clean e-commerce lookbook, shot on a Canon EOS R5 with a 50mm f/1.8 lens for a natural, professional look."
+  },
+  {
+    "tags": [
+      "furnishing",
+      "visualization"
+    ],
+    "prompt": "Show me how this room would look with furniture in it"
+  },
+  {
+    "tags": [
+      "drawn",
+      "hand"
+    ],
+    "prompt": "Convert this hand-drawn whiteboard sketch into a professional corporate flowchart suitable for a business presentation. Style Guide : Use a minimalist 'McKinsey-style' aesthetic : clean lines, ample whitespace, and a sophisticated blue-and-gray color palette. Structure : Automatically align all boxes and diamonds to a strict grid . Connect them with straight, orthogonal arrows (90-degree angles only, no curvy lines). Text : Transcribe the handwritten labels into a clear, bold Sans-Serif font (like Arial or Roboto). Output : High-resolution vector-style image on a pure white background."
+  },
+  {
+    "tags": [
+      "drawn",
+      "hand",
+      "high"
+    ],
+    "prompt": "Transform this rough wireframe sketch into a high-fidelity UI design mockups for a mobile app. Design System : Apply a modern, clean aesthetics similar to iOS 18 or Material Design 3 . Use rounded corners, soft drop shadows, and a vibrant primary color. Components : Intelligently interpret the sketch: turn scribbles into high-quality placeholder images , convert rough rectangles into proper buttons with gradients , and turn lines into realistic text blocks . Layout : Ensure perfect padding and consistent spacing between elements. Context : Place the design inside a realistic iPhone 16 frame mockups."
+  },
+  {
+    "tags": [
+      "generator",
+      "magazine"
+    ],
+    "prompt": "Put this whole text, verbatim, into a photo of a glossy magazine article on a desk, with photos, beautiful typography design, pull quotes and brave formatting. The text: [...the unformatted article]"
+  },
+  {
+    "tags": [
+      "composition"
+    ],
+    "prompt": "Zoom out and expand this image to a 16:9 aspect ratio (computer wallpaper size). Context Awareness : Seamlessly extend the scenery on both left and right sides. Match the original lighting, weather, and texture perfectly. Logical Completion : If there are cut-off objects (like a shoulder, a tree branch, or a building edge) on the borders, complete them naturally based on logical inference. Do not distort the original center image."
+  },
+  {
+    "tags": [
+      "crowd"
+    ],
+    "prompt": "Remove all the tourists/people in the background behind the main subject. Intelligent Fill : Replace them with realistic background elements that logically fit the scene (e.g., extend the cobblestone pavement, empty park benches, or grass textures). Consistency : Ensure no blurry artifacts or 'smudges' remain. The filled area must have the same grain, focus depth, and lighting as the rest of the photo."
+  },
+  {
+    "tags": [
+      "furnishing",
+      "hard"
+    ],
+    "prompt": "Based on the uploaded 2D floor plan, generate a professional interior design presentation board in a single image. Layout : The final image should be a collage with one large main image at the top, and several smaller images below it. Content of Each Panel :\n1. Main Image (Top) : A wide-angle perspective view of the main living area , showing the connection between the living room and dining area.\n2. Small Image (Bottom Left) : A view of the Master Bedroom , focusing on the bed and window.\n3. Small Image (Bottom Middle) : A view of the Home Office / Study room .\n4. Small Image (Bottom Right) : A 3D top-down floor plan view showing the furniture layout. Overall Style : Apply a consistent Modern Minimalist style with warm oak wood flooring and off-white walls across ALL images. Quality : Photorealistic rendering, soft natural lighting."
+  },
+  {
+    "tags": [
+      "cover"
+    ],
+    "prompt": "Design a viral video thumbnail using the person from Image 1. Face Consistency : Keep the person's facial features exactly the same as Image 1 , but change their expression to look excited and surprised . Action : Pose the person on the left side, pointing their finger towards the right side of the frame. Subject : On the right side, place a high-quality image of [a delicious avocado toast]. Graphics : Add a bold yellow arrow connecting the person's finger to the toast. Text : Overlay massive, pop-style text in the middle: '3\u5206\u949f\u641e\u5b9a!' (Done in 3 mins!). Use a thick white outline and drop shadow. Background : A blurred, bright kitchen background. High saturation and contrast."
+  },
+  {
+    "tags": [
+      "poster"
+    ],
+    "prompt": "Design a professional promotional poster for a [Coffee Shop]. Composition : A cinematic close-up of a steaming cup of cappuccino on a rustic wooden table, autumn leaves in the background (cozy atmosphere). Text Integration :\n1. Main Title : 'Autumn Special' written in elegant, gold serif typography at the top.\n2. Offer : 'Buy One Get One Free' clearly displayed in a modern badge or sticker style on the side.\n3. Footer : 'Limited Time Only' in small, clean text at the bottom. Quality : Ensure all text is perfectly spelled, centered, and integrated into the image's depth of field."
+  },
+  {
+    "tags": [],
+    "prompt": "Translate the Chinese dish names on the wall menu into English for foreign tourists. Texture Preservation : Crucial! Maintain the original aged, greasy, and textured look of the wall/paper. The new English text should look like it was written/printed on the same surface, with slight fading or wear to match. Currency : Keep the '\u00a5' symbol and price numbers exactly as they are ; do not convert currency. Layout : align the English translations next to or replacing the Chinese characters naturally."
+  },
+  {
+    "tags": [],
+    "prompt": "Turn this photo of my [cat/dog] into a funny hand-drawn WeChat sticker . Style : Minimalist ugly-cute line drawing (doodle style). White background. Expression : Exaggerate the animal's expression to look extremely shocked/judgemental/lazy (based on photo). Accessories : Add cute little doodles like sweat drops, question marks, or sparkles around the head. Text : Add handwritten text at the bottom: 'So Dumb'. Ensure the text style is messy and funny."
+  },
+  {
+    "tags": [
+      "poster"
+    ],
+    "prompt": "facelock_identity\": \"true\",\n\"accuracy\": \"100%\",\nscene\"Colorful Y2K scrapbook poster aesthetic, vibrant stickers, multiple subjects wearing the same outfit and hairstyle with different poses and cutouts, colorful strokes and lines, frameless collage style. Includes: close-up shot with heart-shape fingers, full-body squatting pose supporting chin while holding a white polaroid camera, mid-shot touching cheek while blowing pink bubblegum, mid-shot smiling elegantly while holding a cat ,seated elegantly with one eye winking and peace sign, and mid-shot holding daisy flowers. Holographic textures, pastel gradients, glitter accents, playful doodles, magazine cut-out graphics, chaotic yet balanced layout, extremely artistic and visually engaging\",\nmain_subject\": {\n\"description\": \"A young Y2K-styled woman as the main focus in the center of the scrapbook collage.\",\n\"style_pose\": \"Playful and confident Y2K pose \u2014 slight side hip pop, one hand holding a lens-flare keychain, face toward the camera with a cute-cool expression, slight pout, candid early-2000s photo vibe.\"\noutfit\": {\n\"top\": \"Cropped oversized sweater in pastel color with embroidered patches\",\n\"bottom\": \"pastel skirt with a white belt\",\n\"socks\": \"White ankle socks with colorful pastel stripes\",\n\"shoes\": \"white sneakers\",\n\"accessories\": [\n\"Colorful plastic bracelets\",\n\"Chunky colorful rings\",\n\"Sparkling belly chain\",\n\"hairstyle\": \n\"type\": \"Y2K half-up half-down\",\n\"details\": \"Pastel flowers clips,thin front tendrils, wavy dark brown hair with bubblegum-pink tint on the lower strands, iconic early-2000s look.\"\nadditional_visuals\": \n\"Heart, star, and butterfly stickers\",\n\"Retro sparkles\",\n\"Polaroid frames\",\n\"Neon outlines\",\n\"Doodle borders\",\n\"Magazine cutout texts: 'SO CUTE!', '199X!', 'GIRL VIBES'\",\n\"Pastel lighting\",\n\"Glossy dreamy retro glow\",\n\"Ultra-aesthetic scrapbook layout\"\nphotography_rendering\": {\n\"color_grading\": \"Cinematic neon Y2K\",\n\"lighting\": \"Soft flash lighting\",\"skin_texture\": \"Smooth glossy finish\",\n\"rendering\": \"High-detail hyperrealistic Y2K scrapbook tone\",\n\"quality\": \"8K\",\n\"composition\": \"Perfectly balanced and artistic\"\nnegative_prompt\": \"no realism that breaks Y2K aesthetic, no modern 2020s clothing, no messy composition, no blurry face, no distorted hands, no extra limbs, no face warping, no low resolution, no grain, no muted colors, no watermark, no AI artifacts\""
+  },
+  {
+    "tags": [
+      "high",
+      "photo"
+    ],
+    "prompt": "A daily snapshot taken with a low-quality disposable camera. A clumsy photo taken by a Japanese high school student. (Aspect ratio 3:2 is recommended)"
+  },
+  {
+    "tags": [],
+    "prompt": "You are a professional skin analyst and skincare expert.\nThe user uploads a close-up photo of their face and may add short notes (age, allergies, current routine, pregnancy, etc.). Use ONLY what you see in the image plus the user text.\n 1. Carefully inspect the skin: shine, pores, redness, blemishes, spots, texture, flaking, fine lines, dark circles, etc.\n 2. Decide the main skin type: oily, dry, normal, combination, or sensitive.\n 3. Identify visible issues: acne/breakouts, blackheads/whiteheads, post-acne marks, hyperpigmentation, redness, enlarged pores, uneven texture, dehydration, fine lines, dark circles, puffiness, etc.\n\nRESPONSE FORMAT (very important)\n\nYour answer must be plain text in this exact structure:\n 1. First, write 3\u20136 short lines describing the skin and problems, for example:\n\n \u2022 overall skin type and how you know\n \u2022 where the main issues appear (forehead, cheeks, nose, chin, jawline, under-eyes)\n \u2022 how severe they look (mild / moderate / severe).\n\n 2. On a new line, write the word in caps:\nSKIN ROUTINE\n 3. Under SKIN ROUTINE, give at least 5 numbered steps (1., 2., 3., \u2026).\nEach step must include:\n\n \u2022 what to do (e.g. \"Cleanser\", \"Treatment serum\", \"Moisturizer\", \"Sunscreen\", \"Night treatment\"),\n \u2022 product TYPE and key INGREDIENTS to look for (no brand names),\n \u2022 when to use it (AM, PM, or both) and how often,\n \u2022 1 short practical instruction (how to apply, how much, any caution).\n\nFocus on over-the-counter products only (no prescription or medical diagnosis).\nIf acne or irritation looks very severe or infected, clearly but kindly suggest visiting a dermatologist.\nKeep the tone supportive, simple and clear."
+  }
+]
