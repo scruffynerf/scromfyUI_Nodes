@@ -17,3 +17,8 @@ ehthumbs.db
 Thumbs.db
 IMPORTINGCODE
 userconfig/user_clipchat_settings.json
+
+workflows/notyetreadytocommit
+prompts/notyetreadytocommit
+wildcards/notyetreadytocommit
+temp_csv_output/
