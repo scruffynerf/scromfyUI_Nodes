@@ -22,3 +22,4 @@ workflows/notyetreadytocommit
 prompts/notyetreadytocommit
 wildcards/notyetreadytocommit
 temp_csv_output/
+.venv/
