@@ -7,7 +7,9 @@ import numpy as np
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from py.moire_nodes import (
-    MoireCoordinates, MoireWarpSinusoidal, MoireRenderer, 
+    MoireCoordinates, MoireWarpSinusoidal, MoireRenderer
+)
+from py.legacy_moire import (
     MoirePatternGenerator, MoireWarpImage
 )
 

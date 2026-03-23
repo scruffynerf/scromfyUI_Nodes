@@ -12,6 +12,7 @@ from typing import Optional, Tuple, List, Union
 # Dependency check
 try:
     from scipy import ndimage
+    from scipy.spatial import cKDTree
     HAS_SCIPY = True
 except ImportError:
     HAS_SCIPY = False
@@ -843,7 +844,9 @@ class MoireNoiseGenerator:
         
         # Adjust filter for noise type
         # Power spectrum P(f) ~ 1/f^alpha => Magnitude |H(f)| ~ 1/f^(alpha/2)
-        filt = 1.0 / (rho ** (alpha / 2.0))
+        filt = np.zeros_like(rho)
+        mask = rho > 0
+        filt[mask] = 1.0 / (rho[mask] ** (alpha / 2.0))
         filt[0, 0] = 0.0 # DC component to zero
         
         filtered = freq_white * filt
@@ -866,9 +869,10 @@ class MoireNoiseGenerator:
         coords = np.stack([x.ravel(), y.ravel()], axis=-1)
         
         # Find distance to nearest point
-        # Using a simple brute force for now, can optimize if needed
-        # dists[i] = min distance from pixel i to any point
-        from scipy.spatial import cKDTree
+        # Using KDTree for efficient nearest neighbor search
+        if not HAS_SCIPY:
+            raise ImportError(get_scipy_error_message())
+            
         tree = cKDTree(points)
         dists, _ = tree.query(coords)
         
@@ -893,7 +897,7 @@ class MoireNoiseGenerator:
         sigma = patch_size / 4.0
         lambda_ = patch_size / 4.0
         x_theta = x * np.cos(theta) + y * np.sin(theta)
-        y_theta = -x * np.sin(theta) + y * np.cos(theta)
+        y_theta = np.negative(x) * np.sin(theta) + y * np.cos(theta)
         kernel = np.exp(-0.5 * (x_theta**2 + y_theta**2) / sigma**2) * np.cos(2 * np.pi * x_theta / lambda_)
         
         for _ in range(num_patches):
@@ -1028,7 +1032,9 @@ class MoireMultiGridRenderer:
         
         # Blend layers
         result = layers[0]
-        for layer in layers[1:]:
+        for i, layer in enumerate(layers):
+            if i == 0:
+                continue
             if grid_blend_mode == "add":
                 result = np.clip(result + layer, 0, 1)
             elif grid_blend_mode == "multiply":
